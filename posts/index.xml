@@ -40,7 +40,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     <item>
       <title>【電動機控制】</title>
       <link>https://yhtzou.github.io/posts/2021031101/</link>
-      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://yhtzou.github.io/posts/2021031101/</guid>
       <description>電動機控制 5062 Smart Power Processing for Energy Saving     鄒應嶼教授 國立陽明交通大學 電機控制工程研究所   Lab808: 電力電子系統與晶片實驗室    Power Electronic Systems &amp;amp; Chips, NYCU, TAIWAN     課程內容 #  本課程介紹電動機控制的基本原理、功率放大器、與控制方法，以永磁直流電機之驅動控制為基礎，介紹感應電機、永磁同步電機、無刷直流電機的工作原理、數學模型、驅動控制、與實現技術。課程內容強調基本原理、控制方法與實務應用的結合，使用電腦模擬軟體Matlab/Simulink進行電機驅動控制系統的特性分析與控制模擬。
