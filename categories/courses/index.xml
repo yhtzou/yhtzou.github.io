@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Courses on PEMCLAB</title>
+    <link>https://yhtzou.github.io/categories/courses/</link>
+    <description>Recent content in Courses on PEMCLAB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hant</language>
+    <lastBuildDate>Thu, 11 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yhtzou.github.io/categories/courses/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【電動機控制】</title>
+      <link>https://yhtzou.github.io/posts/2021031101/</link>
+      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yhtzou.github.io/posts/2021031101/</guid>
+      <description>電動機控制 5062 Smart Power Processing for Energy Saving     鄒應嶼教授 國立陽明交通大學 電機控制工程研究所   Lab808: 電力電子系統與晶片實驗室    Power Electronic Systems &amp;amp; Chips, NYCU, TAIWAN     課程內容 #  本課程介紹電動機控制的基本原理、功率放大器、與控制方法，以永磁直流電機之驅動控制為基礎，介紹感應電機、永磁同步電機、無刷直流電機的工作原理、數學模型、驅動控制、與實現技術。課程內容強調基本原理、控制方法與實務應用的結合，使用電腦模擬軟體Matlab/Simulink進行電機驅動控制系統的特性分析與控制模擬。
+課程內容特別著重利用Matlab-Simulink進行電機驅動控制系統的分析與模擬，利用PSIM、PLECS模擬電機驅動器，在輔以Matlab-Simulik進行系統整合設計的設計優化 (design optimization)。
+課程教材 #  教課書、講義與指定參考書籍 Fundamentals of Electrical Drive, 2nd ED, Andre Veltman, Duco W.J. Pulle, R.W. de Doncker, Springer, 2016. Advanced Electrical Drives - Analysis, Modeling, Control, Rik De Doncker, Duco W.</description>
+    </item>
+    
+  </channel>
+</rss>

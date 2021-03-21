@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on PEMCLAB</title>
+    <link>https://yhtzou.github.io/posts/</link>
+    <description>Recent content in Blog on PEMCLAB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hant</language>
+    <lastBuildDate>Sun, 21 Mar 2021 20:07:48 +0800</lastBuildDate><atom:link href="https://yhtzou.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://yhtzou.github.io/posts/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://yhtzou.github.io/posts/creating-a-new-theme/</guid>
+      <description>Introduction #  This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>https://yhtzou.github.io/posts/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://yhtzou.github.io/posts/migrate-from-jekyll/</guid>
+      <description>Move static content to static #  Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>开博大吉</title>
+      <link>https://yhtzou.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
+      <pubDate>Sun, 21 Mar 2021 20:07:48 +0800</pubDate>
+      
+      <guid>https://yhtzou.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>【電動機控制】</title>
+      <link>https://yhtzou.github.io/posts/2021031101/</link>
+      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yhtzou.github.io/posts/2021031101/</guid>
+      <description>電動機控制 5062 Smart Power Processing for Energy Saving     鄒應嶼教授 國立陽明交通大學 電機控制工程研究所   Lab808: 電力電子系統與晶片實驗室    Power Electronic Systems &amp;amp; Chips, NYCU, TAIWAN     課程內容 #  本課程介紹電動機控制的基本原理、功率放大器、與控制方法，以永磁直流電機之驅動控制為基礎，介紹感應電機、永磁同步電機、無刷直流電機的工作原理、數學模型、驅動控制、與實現技術。課程內容強調基本原理、控制方法與實務應用的結合，使用電腦模擬軟體Matlab/Simulink進行電機驅動控制系統的特性分析與控制模擬。
+課程內容特別著重利用Matlab-Simulink進行電機驅動控制系統的分析與模擬，利用PSIM、PLECS模擬電機驅動器，在輔以Matlab-Simulik進行系統整合設計的設計優化 (design optimization)。
+課程教材 #  教課書、講義與指定參考書籍 Fundamentals of Electrical Drive, 2nd ED, Andre Veltman, Duco W.J. Pulle, R.W. de Doncker, Springer, 2016. Advanced Electrical Drives - Analysis, Modeling, Control, Rik De Doncker, Duco W.</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>https://yhtzou.github.io/posts/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://yhtzou.github.io/posts/goisforlovers/</guid>
+      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
+This document is a brief primer on using Go templates.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://yhtzou.github.io/posts/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://yhtzou.github.io/posts/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo #  Go to Hugo releases and download the appropriate version for your OS and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at Install Hugo
+Step 2. Build the Docs #  Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:</description>
+    </item>
+    
+  </channel>
+</rss>
