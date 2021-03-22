@@ -5,5 +5,14 @@
     <link>https://yhtzou.github.io/docs/</link>
     <description>Recent content in Docs on PEMCLAB</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://yhtzou.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://yhtzou.github.io/docs/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yhtzou.github.io/docs/about/</guid>
+      <description>關於實驗室 #  808-PowerLab 成立於1987年9月，從事電力電子與綠色節能發電技術為基礎的高效能電源與馬達驅動系統整合設計技術之研究與發展。應用數位控制技術於電源與馬達驅動系統控制晶片的整合設計，建立Digital Power and Motor Control晶片化設計與驗證平台的發展，以先進智能電源與馬達驅動技術發展為研究導向。著重關鍵技術之發展，秉持理論與實務相輔相成、學術研究與產業應用互為表裡的研究理念。</description>
+    </item>
+    
   </channel>
 </rss>
