@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>course on PEMCLAB</title>
+    <link>https://yhtzou.github.io/categories/course/</link>
+    <description>Recent content in course on PEMCLAB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 24 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yhtzou.github.io/categories/course/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>數位交流驅動控制器之設計與實現</title>
+      <link>https://yhtzou.github.io/posts/2021032401/</link>
+      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yhtzou.github.io/posts/2021032401/</guid>
+      <description>數位交流驅動控制器之設計與實現 #  Introduction Converter Topology for AC Drives Control Interface for Digital Servo Motor Control Digital AC Servo Motor Controller Requirements Evolution of DSP Motor Controllers Digital Motor Control ICs Practical Issues in Digital Motion Control 808-PowerLab Research on Digital Motor Control
+Introduction #  Motor Drives for Manufacturing Automation Composition of a Motion Control System State of the Art: AC Servos Block Diagram of a Typical Digital Motor Controller DSP Solution for Motor Control Characteristics of Power Electronic Systems Journals and Conferences</description>
+    </item>
+    
+  </channel>
+</rss>
