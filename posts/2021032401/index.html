@@ -17,7 +17,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.2bc2364a4a4b31f0ec1debecf0a8f90a840821f143dfe1ac6a0f7cbcbdcf64ac.css" integrity="sha256-K8I2SkpLMfDsHevs8Kj5CoQIIfFD3&#43;Gsag98vL3PZKw=">
-<script defer src="/en.search.min.f14f173ba24b1bfbabafaec8df00ceb08aa6201f812ad88992bb78f31b11cbb9.js" integrity="sha256-8U8XO6JLG/urr67I3wDOsIqmIB&#43;BKtiJkrt48xsRy7k="></script>
+<script defer src="/en.search.min.d2e3f3552dcd49d8abd9c6cd18f23c29ea37d11b702b56f1500b2a8d1abdfe21.js" integrity="sha256-0uPzVS3NSdir2cbNGPI8Keo30RtwK1bxUAsqjRq9/iE="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -58,7 +58,7 @@ https://github.com/alex-shpak/hugo-book
 
   <ul>
 <li><a href="/docs/about/"><strong>關於實驗室</strong></a></li>
-<li><a href="/"><strong>開設課程</strong></a>
+<li>[<strong>開設課程</strong>]
 <ul>
 <li><a href="/posts/2021031101/">電動機控制</a></li>
 <li>數位電源控制</li>
@@ -123,44 +123,41 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#數位交流驅動控制器之設計與實現">數位交流驅動控制器之設計與實現</a></li>
-    <li><a href="#introduction">Introduction</a>
-      <ul>
-        <li><a href="#composition-of-a-motion-control-system">Composition of a Motion Control System</a></li>
-        <li><a href="#modern-digital-ac-servo-drive">Modern Digital AC Servo Drive</a></li>
-        <li><a href="#typical-time-and-frequency-responses">Typical Time and Frequency Responses</a></li>
-        <li><a href="#selection-of-servo-drive-interface">Selection of Servo Drive Interface</a></li>
-        <li><a href="#evolution-of-electrical-machines">Evolution of Electrical Machines</a></li>
-        <li><a href="#what-could-an-ac-vector-system-do-in-servo-applications">What could an AC vector system do in servo applications?</a></li>
-        <li><a href="#induction-motor-vs-pm-synchronous-motor">Induction Motor vs. PM Synchronous Motor</a></li>
-        <li><a href="#ac-servo-driver-with-synchronous-or-induction-motors">AC Servo Driver with Synchronous or Induction Motors</a></li>
-        <li><a href="#vf-vector-induction-drive-vs-pm-ac-servo">VF Vector Induction Drive vs. PM AC Servo</a></li>
-        <li><a href="#永磁交流伺服馬達的結構">永磁交流伺服馬達的結構</a></li>
-        <li><a href="#optimal-capacity-ranges-of-brushless-servomotors">Optimal Capacity Ranges of Brushless Servomotors</a></li>
-        <li><a href="#characteristics-of-ac-servo-motors">Characteristics of AC Servo Motors</a></li>
-        <li><a href="#characteristics-of-ac-servo-drives">Characteristics of AC Servo Drives</a></li>
-        <li><a href="#永磁交流伺服馬達的規格">永磁交流伺服馬達的規格</a></li>
-        <li><a href="#永磁交流伺服驅動器的規格">永磁交流伺服驅動器的規格</a></li>
-        <li><a href="#state-of-the-art-ac-servos">State of the Art: AC Servos</a></li>
-        <li><a href="#non-salient-pole-for-ac-servo-motor">Non-Salient Pole for AC Servo Motor</a></li>
-        <li><a href="#architecture-of-motor-drive">Architecture of Motor Drive</a></li>
-        <li><a href="#伺服馬達驅動系統的控制架構">伺服馬達驅動系統的控制架構</a></li>
-        <li><a href="#直流伺服馬達驅動器的系統方塊圖">直流伺服馬達驅動器的系統方塊圖</a></li>
-        <li><a href="#交流伺服馬達驅動器的系統方塊圖">交流伺服馬達驅動器的系統方塊圖</a></li>
-        <li><a href="#永磁式交流伺服馬達的電子換相控制">永磁式交流伺服馬達的電子換相控制</a></li>
-        <li><a href="#永磁式交流伺服馬達驅動器之系統方塊圖">永磁式交流伺服馬達驅動器之系統方塊圖</a></li>
-        <li><a href="#typical-motion-control-system-block-diagram">Typical Motion Control System Block Diagram</a></li>
-        <li><a href="#hierarchical-control-architecture-for-ac-drives">Hierarchical Control Architecture for AC Drives</a></li>
-        <li><a href="#ac-servo-drive-vector-control">AC Servo Drive Vector Control</a></li>
-        <li><a href="#dq-model-of-ac-induction-machine-in-synchronous-rotating-reference-frame">dq-model of AC Induction Machine in synchronous rotating reference frame</a></li>
-        <li><a href="#永磁式交流伺服驅動器理想解耦電流控制迴路的等效方塊圖">永磁式交流伺服驅動器理想解耦電流控制迴路的等效方塊圖</a></li>
-        <li><a href="#永磁式交流伺服驅動器速度控制迴路的等效方塊圖">永磁式交流伺服驅動器速度控制迴路的等效方塊圖</a></li>
-        <li><a href="#decoupling-of-the-current-control-loop">Decoupling of the Current Control Loop</a></li>
-        <li><a href="#永磁式交流伺服驅動器位置控制迴路的等效方塊圖">永磁式交流伺服驅動器位置控制迴路的等效方塊圖</a></li>
-        <li><a href="#modeling-of-the-servo-motor-with-connected-load-mechanical-nonlinear-dynamics">Modeling of the Servo Motor with Connected Load Mechanical Nonlinear Dynamics</a></li>
-        <li><a href="#control-strategies-for-pmsm-ac-drives">Control Strategies for PMSM AC Drives</a></li>
-      </ul>
-    </li>
+    <li><a href="#topics">Topics</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#composition-of-a-motion-control-system">Composition of a Motion Control System</a></li>
+    <li><a href="#modern-digital-ac-servo-drive">Modern Digital AC Servo Drive</a></li>
+    <li><a href="#typical-time-and-frequency-responses">Typical Time and Frequency Responses</a></li>
+    <li><a href="#selection-of-servo-drive-interface">Selection of Servo Drive Interface</a></li>
+    <li><a href="#evolution-of-electrical-machines">Evolution of Electrical Machines</a></li>
+    <li><a href="#what-could-an-ac-vector-system-do-in-servo-applications">What could an AC vector system do in servo applications?</a></li>
+    <li><a href="#induction-motor-vs-pm-synchronous-motor">Induction Motor vs. PM Synchronous Motor</a></li>
+    <li><a href="#ac-servo-driver-with-synchronous-or-induction-motors">AC Servo Driver with Synchronous or Induction Motors</a></li>
+    <li><a href="#vf-vector-induction-drive-vs-pm-ac-servo">VF Vector Induction Drive vs. PM AC Servo</a></li>
+    <li><a href="#永磁交流伺服馬達的結構">永磁交流伺服馬達的結構</a></li>
+    <li><a href="#optimal-capacity-ranges-of-brushless-servomotors">Optimal Capacity Ranges of Brushless Servomotors</a></li>
+    <li><a href="#characteristics-of-ac-servo-motors">Characteristics of AC Servo Motors</a></li>
+    <li><a href="#characteristics-of-ac-servo-drives">Characteristics of AC Servo Drives</a></li>
+    <li><a href="#永磁交流伺服馬達的規格">永磁交流伺服馬達的規格</a></li>
+    <li><a href="#永磁交流伺服驅動器的規格">永磁交流伺服驅動器的規格</a></li>
+    <li><a href="#state-of-the-art-ac-servos">State of the Art: AC Servos</a></li>
+    <li><a href="#non-salient-pole-for-ac-servo-motor">Non-Salient Pole for AC Servo Motor</a></li>
+    <li><a href="#architecture-of-motor-drive">Architecture of Motor Drive</a></li>
+    <li><a href="#伺服馬達驅動系統的控制架構">伺服馬達驅動系統的控制架構</a></li>
+    <li><a href="#直流伺服馬達驅動器的系統方塊圖">直流伺服馬達驅動器的系統方塊圖</a></li>
+    <li><a href="#交流伺服馬達驅動器的系統方塊圖">交流伺服馬達驅動器的系統方塊圖</a></li>
+    <li><a href="#永磁式交流伺服馬達的電子換相控制">永磁式交流伺服馬達的電子換相控制</a></li>
+    <li><a href="#永磁式交流伺服馬達驅動器之系統方塊圖">永磁式交流伺服馬達驅動器之系統方塊圖</a></li>
+    <li><a href="#typical-motion-control-system-block-diagram">Typical Motion Control System Block Diagram</a></li>
+    <li><a href="#hierarchical-control-architecture-for-ac-drives">Hierarchical Control Architecture for AC Drives</a></li>
+    <li><a href="#ac-servo-drive-vector-control">AC Servo Drive Vector Control</a></li>
+    <li><a href="#dq-model-of-ac-induction-machine-in-synchronous-rotating-reference-frame">dq-model of AC Induction Machine in synchronous rotating reference frame</a></li>
+    <li><a href="#永磁式交流伺服驅動器理想解耦電流控制迴路的等效方塊圖">永磁式交流伺服驅動器理想解耦電流控制迴路的等效方塊圖</a></li>
+    <li><a href="#永磁式交流伺服驅動器速度控制迴路的等效方塊圖">永磁式交流伺服驅動器速度控制迴路的等效方塊圖</a></li>
+    <li><a href="#decoupling-of-the-current-control-loop">Decoupling of the Current Control Loop</a></li>
+    <li><a href="#永磁式交流伺服驅動器位置控制迴路的等效方塊圖">永磁式交流伺服驅動器位置控制迴路的等效方塊圖</a></li>
+    <li><a href="#modeling-of-the-servo-motor-with-connected-load-mechanical-nonlinear-dynamics">Modeling of the Servo Motor with Connected Load Mechanical Nonlinear Dynamics</a></li>
+    <li><a href="#control-strategies-for-pmsm-ac-drives">Control Strategies for PMSM AC Drives</a></li>
   </ul>
 </nav>
 
@@ -185,72 +182,78 @@ https://github.com/alex-shpak/hugo-book
   
   <div>
     
-      <a href="/categories/course/">course</a>
+      <a href="/categories/courses/">Courses</a>
   </div>
   
 
   
 
 
-  <p><h2 id="數位交流驅動控制器之設計與實現">
-  數位交流驅動控制器之設計與實現
-  <a class="anchor" href="#%e6%95%b8%e4%bd%8d%e4%ba%a4%e6%b5%81%e9%a9%85%e5%8b%95%e6%8e%a7%e5%88%b6%e5%99%a8%e4%b9%8b%e8%a8%ad%e8%a8%88%e8%88%87%e5%af%a6%e7%8f%be">#</a>
+  <p><h2 id="topics">
+  Topics
+  <a class="anchor" href="#topics">#</a>
 </h2>
-<p>Introduction
-Converter Topology for AC Drives
-Control Interface for Digital Servo Motor Control
-Digital AC Servo Motor Controller Requirements
-Evolution of DSP Motor Controllers
-Digital Motor Control ICs
-Practical Issues in Digital Motion Control
-808-PowerLab Research on Digital Motor Control</p>
+<ul>
+<li>Introduction</li>
+<li>Converter Topology for AC Drives</li>
+<li>Control Interface for Digital Servo Motor Control</li>
+<li>Digital AC Servo Motor Controller Requirements</li>
+<li>Evolution of DSP Motor Controllers</li>
+<li>Digital Motor Control ICs</li>
+<li>Practical Issues in Digital Motion Control</li>
+<li>808-PowerLab Research on Digital Motor Control</li>
+</ul>
 <h2 id="introduction">
   Introduction
   <a class="anchor" href="#introduction">#</a>
 </h2>
-<p>Motor Drives for Manufacturing Automation
-Composition of a Motion Control System
-State of the Art: AC Servos
-Block Diagram of a Typical Digital Motor Controller
-DSP Solution for Motor Control
-Characteristics of Power Electronic Systems
-Journals and Conferences</p>
-<h3 id="composition-of-a-motion-control-system">
+<ul>
+<li>Motor Drives for Manufacturing Automation</li>
+<li>Composition of a Motion Control System</li>
+<li>State of the Art: AC Servos</li>
+<li>Block Diagram of a Typical Digital Motor Controller</li>
+<li>DSP Solution for Motor Control</li>
+<li>Characteristics of Power Electronic Systems</li>
+<li>Journals and Conferences</li>
+</ul>
+<h2 id="composition-of-a-motion-control-system">
   Composition of a Motion Control System
   <a class="anchor" href="#composition-of-a-motion-control-system">#</a>
-</h3>
-<p><img src="/img/2021032401/202103240100001.png" alt="" />
-The servo motor is connected to a mechanical load
-The tacho-generator is usually not used in modern digital servo drive
-The servo drive unit may be multiple-axis and consists of a motion controller
-The control unit provides man-machine interface</p>
-<h3 id="modern-digital-ac-servo-drive">
+</h2>
+<p><img src="/img/2021032401/202103240100001.png" alt="" /></p>
+<ul>
+<li>The servo motor is connected to a mechanical load</li>
+<li>The tacho-generator is usually not used in modern digital servo drive</li>
+<li>The servo drive unit may be multiple-axis and consists of a motion controller</li>
+<li>The control unit provides man-machine interface</li>
+</ul>
+<h2 id="modern-digital-ac-servo-drive">
   Modern Digital AC Servo Drive
   <a class="anchor" href="#modern-digital-ac-servo-drive">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100002.png" alt="" /></p>
-<h3 id="typical-time-and-frequency-responses">
+<h2 id="typical-time-and-frequency-responses">
   Typical Time and Frequency Responses
   <a class="anchor" href="#typical-time-and-frequency-responses">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100003.png" alt="" /></p>
 <blockquote>
 <p>An example of motor current waveforms and Bode diagram of the whole system: (a) speed response to step command and primary-phase current waveform; (b) Bode diagrams of the speed-control system.</p>
 </blockquote>
-<h3 id="selection-of-servo-drive-interface">
+<h2 id="selection-of-servo-drive-interface">
   Selection of Servo Drive Interface
   <a class="anchor" href="#selection-of-servo-drive-interface">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100004.png" alt="" /></p>
-<h3 id="evolution-of-electrical-machines">
+<h2 id="evolution-of-electrical-machines">
   Evolution of Electrical Machines
   <a class="anchor" href="#evolution-of-electrical-machines">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100005.png" alt="" /></p>
-<h3 id="what-could-an-ac-vector-system-do-in-servo-applications">
+<h2 id="what-could-an-ac-vector-system-do-in-servo-applications">
   What could an AC vector system do in servo applications?
   <a class="anchor" href="#what-could-an-ac-vector-system-do-in-servo-applications">#</a>
-</h3>
+</h2>
 <ul>
 <li>Speed Regulation up to .5% open loop, .001% closed loop w/external encoder.</li>
 <li>Full torque at zero speed.</li>
@@ -258,25 +261,25 @@ The control unit provides man-machine interface</p>
 <li>Positioning applications with low acceleration, low response &amp; low bandwidth requirements (High power, large inertia system).
 <img src="/img/2021032401/202103240100006.png" alt="" /></li>
 </ul>
-<h3 id="induction-motor-vs-pm-synchronous-motor">
+<h2 id="induction-motor-vs-pm-synchronous-motor">
   Induction Motor vs. PM Synchronous Motor
   <a class="anchor" href="#induction-motor-vs-pm-synchronous-motor">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100007.png" alt="" /></p>
-<h3 id="ac-servo-driver-with-synchronous-or-induction-motors">
+<h2 id="ac-servo-driver-with-synchronous-or-induction-motors">
   AC Servo Driver with Synchronous or Induction Motors
   <a class="anchor" href="#ac-servo-driver-with-synchronous-or-induction-motors">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100008.png" alt="" />
-<em>Abstract—</em> With the recent advances of power transistors and microprocessors it has become possible to design high-dynamic-performance ac-servo drives free of moving contacts using synchronous or asynchronous motors. Both schemes have their particular strengths. A general control principle, based on field or rotor orientation, is described which has been realized with a state-of-the-art microcomputer, where all the signal processing, including modulation of the inverter, is performed by software. Extensive tests have been carried out with different motors to compare the characteristics of the various types of drives.</p>
+<strong>Abstract:</strong> With the recent advances of power transistors and microprocessors it has become possible to design high-dynamic-performance ac-servo drives free of moving contacts using synchronous or asynchronous motors. Both schemes have their particular strengths. A general control principle, based on field or rotor orientation, is described which has been realized with a state-of-the-art microcomputer, where all the signal processing, including modulation of the inverter, is performed by software. Extensive tests have been carried out with different motors to compare the characteristics of the various types of drives.</p>
 <p><strong>Comments:</strong> A vector-controlled induction drive can achieve its servo control performance as good as the PM synchronous motor. However, the power density of a PM AC servo motor is about 1.6 times of an equivalent induction servo motor (2006), this makes the PMAC servo drive the only selection for high performance motor control systems.</p>
 <blockquote>
 <p>R. Lessmeier, W. Schumacher, and W. Leonhard, “Microprocessor - controlled AC - servo driver with synchronous or induction motors: which is preferable ?,” IEEE Trans. on Ind. Appli., vol. 22, no. 5, pp. 812-819, Sept./Oct. 1986.</p>
 </blockquote>
-<h3 id="vf-vector-induction-drive-vs-pm-ac-servo">
+<h2 id="vf-vector-induction-drive-vs-pm-ac-servo">
   VF Vector Induction Drive vs. PM AC Servo
   <a class="anchor" href="#vf-vector-induction-drive-vs-pm-ac-servo">#</a>
-</h3>
+</h2>
 <p>There are <strong>Disadvantages</strong> of using an AC VFD for motion control instead of using an AC Servo Drive:</p>
 <ul>
 <li>Heat buildup at low speeds</li>
@@ -289,127 +292,129 @@ The control unit provides man-machine interface</p>
 <li>The overall bandwidth will be lower with the VFD system.  A system bandwidth lower than 40 rads/sec.</li>
 <li>Could have stability problems in a closed loop system.</li>
 </ul>
-<h3 id="永磁交流伺服馬達的結構">
+<h2 id="永磁交流伺服馬達的結構">
   永磁交流伺服馬達的結構
   <a class="anchor" href="#%e6%b0%b8%e7%a3%81%e4%ba%a4%e6%b5%81%e4%bc%ba%e6%9c%8d%e9%a6%ac%e9%81%94%e7%9a%84%e7%b5%90%e6%a7%8b">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100009.png" alt="" /></p>
-<h3 id="optimal-capacity-ranges-of-brushless-servomotors">
+<h2 id="optimal-capacity-ranges-of-brushless-servomotors">
   Optimal Capacity Ranges of Brushless Servomotors
   <a class="anchor" href="#optimal-capacity-ranges-of-brushless-servomotors">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100010.png" alt="" /></p>
-<h3 id="characteristics-of-ac-servo-motors">
+<h2 id="characteristics-of-ac-servo-motors">
   Characteristics of AC Servo Motors
   <a class="anchor" href="#characteristics-of-ac-servo-motors">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100011.png" alt="" /></p>
-<h3 id="characteristics-of-ac-servo-drives">
+<h2 id="characteristics-of-ac-servo-drives">
   Characteristics of AC Servo Drives
   <a class="anchor" href="#characteristics-of-ac-servo-drives">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100012.png" alt="" /></p>
-<h3 id="永磁交流伺服馬達的規格">
+<h2 id="永磁交流伺服馬達的規格">
   永磁交流伺服馬達的規格
   <a class="anchor" href="#%e6%b0%b8%e7%a3%81%e4%ba%a4%e6%b5%81%e4%bc%ba%e6%9c%8d%e9%a6%ac%e9%81%94%e7%9a%84%e8%a6%8f%e6%a0%bc">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100013.png" alt="" /></p>
-<h3 id="永磁交流伺服驅動器的規格">
+<h2 id="永磁交流伺服驅動器的規格">
   永磁交流伺服驅動器的規格
   <a class="anchor" href="#%e6%b0%b8%e7%a3%81%e4%ba%a4%e6%b5%81%e4%bc%ba%e6%9c%8d%e9%a9%85%e5%8b%95%e5%99%a8%e7%9a%84%e8%a6%8f%e6%a0%bc">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100014.png" alt="" /></p>
-<h3 id="state-of-the-art-ac-servos">
+<h2 id="state-of-the-art-ac-servos">
   State of the Art: AC Servos
   <a class="anchor" href="#state-of-the-art-ac-servos">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100015.png" alt="" /></p>
-<h3 id="non-salient-pole-for-ac-servo-motor">
+<h2 id="non-salient-pole-for-ac-servo-motor">
   Non-Salient Pole for AC Servo Motor
   <a class="anchor" href="#non-salient-pole-for-ac-servo-motor">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100016.png" alt="" />
-永磁馬達的轉子根據其結構，可分為：
-**Salient-pole (凸極式)：**氣隙分佈不均勻，具有磁阻扭矩，效率較高，轉矩漣波較大，但可經由轉子設計降低，構造較複雜，成本較高，主要應用於高效率壓縮機。
-**Non-salient-pole (隱極式)：**氣隙均勻分佈，外表呈現圓柱狀，亦稱之為圓柱式(cylindrical-type)，磁鐵貼覆於轉子表面，或以不鏽鋼環套住。轉矩漣波較小，主要應用於伺服馬達。</p>
-<h3 id="architecture-of-motor-drive">
+永磁馬達的轉子根據其結構，可分為：</p>
+<ul>
+<li><strong>Salient-pole (凸極式)：</strong> 氣隙分佈不均勻，具有磁阻扭矩，效率較高，轉矩漣波較大，但可經由轉子設計降低，構造較複雜，成本較高，主要應用於高效率壓縮機。</li>
+<li><strong>Non-salient-pole (隱極式)：</strong> 氣隙均勻分佈，外表呈現圓柱狀，亦稱之為圓柱式(cylindrical-type)，磁鐵貼覆於轉子表面，或以不鏽鋼環套住。轉矩漣波較小，主要應用於伺服馬達。</li>
+</ul>
+<h2 id="architecture-of-motor-drive">
   Architecture of Motor Drive
   <a class="anchor" href="#architecture-of-motor-drive">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100017.png" alt="" /></p>
-<h3 id="伺服馬達驅動系統的控制架構">
+<h2 id="伺服馬達驅動系統的控制架構">
   伺服馬達驅動系統的控制架構
   <a class="anchor" href="#%e4%bc%ba%e6%9c%8d%e9%a6%ac%e9%81%94%e9%a9%85%e5%8b%95%e7%b3%bb%e7%b5%b1%e7%9a%84%e6%8e%a7%e5%88%b6%e6%9e%b6%e6%a7%8b">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100018.png" alt="" /></p>
-<h3 id="直流伺服馬達驅動器的系統方塊圖">
+<h2 id="直流伺服馬達驅動器的系統方塊圖">
   直流伺服馬達驅動器的系統方塊圖
   <a class="anchor" href="#%e7%9b%b4%e6%b5%81%e4%bc%ba%e6%9c%8d%e9%a6%ac%e9%81%94%e9%a9%85%e5%8b%95%e5%99%a8%e7%9a%84%e7%b3%bb%e7%b5%b1%e6%96%b9%e5%a1%8a%e5%9c%96">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100019.png" alt="" /></p>
-<h3 id="交流伺服馬達驅動器的系統方塊圖">
+<h2 id="交流伺服馬達驅動器的系統方塊圖">
   交流伺服馬達驅動器的系統方塊圖
   <a class="anchor" href="#%e4%ba%a4%e6%b5%81%e4%bc%ba%e6%9c%8d%e9%a6%ac%e9%81%94%e9%a9%85%e5%8b%95%e5%99%a8%e7%9a%84%e7%b3%bb%e7%b5%b1%e6%96%b9%e5%a1%8a%e5%9c%96">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100020.png" alt="" /></p>
-<h3 id="永磁式交流伺服馬達的電子換相控制">
+<h2 id="永磁式交流伺服馬達的電子換相控制">
   永磁式交流伺服馬達的電子換相控制
   <a class="anchor" href="#%e6%b0%b8%e7%a3%81%e5%bc%8f%e4%ba%a4%e6%b5%81%e4%bc%ba%e6%9c%8d%e9%a6%ac%e9%81%94%e7%9a%84%e9%9b%bb%e5%ad%90%e6%8f%9b%e7%9b%b8%e6%8e%a7%e5%88%b6">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100021.png" alt="" /></p>
-<h3 id="永磁式交流伺服馬達驅動器之系統方塊圖">
+<h2 id="永磁式交流伺服馬達驅動器之系統方塊圖">
   永磁式交流伺服馬達驅動器之系統方塊圖
   <a class="anchor" href="#%e6%b0%b8%e7%a3%81%e5%bc%8f%e4%ba%a4%e6%b5%81%e4%bc%ba%e6%9c%8d%e9%a6%ac%e9%81%94%e9%a9%85%e5%8b%95%e5%99%a8%e4%b9%8b%e7%b3%bb%e7%b5%b1%e6%96%b9%e5%a1%8a%e5%9c%96">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100022.png" alt="" /></p>
-<h3 id="typical-motion-control-system-block-diagram">
+<h2 id="typical-motion-control-system-block-diagram">
   Typical Motion Control System Block Diagram
   <a class="anchor" href="#typical-motion-control-system-block-diagram">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100023.png" alt="" /></p>
-<h3 id="hierarchical-control-architecture-for-ac-drives">
+<h2 id="hierarchical-control-architecture-for-ac-drives">
   Hierarchical Control Architecture for AC Drives
   <a class="anchor" href="#hierarchical-control-architecture-for-ac-drives">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100024.png" alt="" /></p>
-<h3 id="ac-servo-drive-vector-control">
+<h2 id="ac-servo-drive-vector-control">
   AC Servo Drive Vector Control
   <a class="anchor" href="#ac-servo-drive-vector-control">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100025.png" alt="" /></p>
-<h3 id="dq-model-of-ac-induction-machine-in-synchronous-rotating-reference-frame">
+<h2 id="dq-model-of-ac-induction-machine-in-synchronous-rotating-reference-frame">
   dq-model of AC Induction Machine in synchronous rotating reference frame
   <a class="anchor" href="#dq-model-of-ac-induction-machine-in-synchronous-rotating-reference-frame">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100027.png" alt="" /></p>
-<h3 id="永磁式交流伺服驅動器理想解耦電流控制迴路的等效方塊圖">
+<h2 id="永磁式交流伺服驅動器理想解耦電流控制迴路的等效方塊圖">
   永磁式交流伺服驅動器理想解耦電流控制迴路的等效方塊圖
   <a class="anchor" href="#%e6%b0%b8%e7%a3%81%e5%bc%8f%e4%ba%a4%e6%b5%81%e4%bc%ba%e6%9c%8d%e9%a9%85%e5%8b%95%e5%99%a8%e7%90%86%e6%83%b3%e8%a7%a3%e8%80%a6%e9%9b%bb%e6%b5%81%e6%8e%a7%e5%88%b6%e8%bf%b4%e8%b7%af%e7%9a%84%e7%ad%89%e6%95%88%e6%96%b9%e5%a1%8a%e5%9c%96">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100028.png" alt="" /></p>
-<h3 id="永磁式交流伺服驅動器速度控制迴路的等效方塊圖">
+<h2 id="永磁式交流伺服驅動器速度控制迴路的等效方塊圖">
   永磁式交流伺服驅動器速度控制迴路的等效方塊圖
   <a class="anchor" href="#%e6%b0%b8%e7%a3%81%e5%bc%8f%e4%ba%a4%e6%b5%81%e4%bc%ba%e6%9c%8d%e9%a9%85%e5%8b%95%e5%99%a8%e9%80%9f%e5%ba%a6%e6%8e%a7%e5%88%b6%e8%bf%b4%e8%b7%af%e7%9a%84%e7%ad%89%e6%95%88%e6%96%b9%e5%a1%8a%e5%9c%96">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100029.png" alt="" /></p>
 <ul>
 <li>Under a well-decoupled current control in either stationary or rotating reference frame, the PMSM motor can be modeled as a current-regulated dc motor with its torque current command (iq) equivalent to the armature current command to the dc drive with inner current control loop.</li>
 <li>With an increased operating speed (synchronous frequency), the current control loop in FOC will have a larger phase error and results a decreased torque control capability.</li>
 </ul>
-<h3 id="decoupling-of-the-current-control-loop">
+<h2 id="decoupling-of-the-current-control-loop">
   Decoupling of the Current Control Loop
   <a class="anchor" href="#decoupling-of-the-current-control-loop">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100030.png" alt="" /></p>
-<h3 id="永磁式交流伺服驅動器位置控制迴路的等效方塊圖">
+<h2 id="永磁式交流伺服驅動器位置控制迴路的等效方塊圖">
   永磁式交流伺服驅動器位置控制迴路的等效方塊圖
   <a class="anchor" href="#%e6%b0%b8%e7%a3%81%e5%bc%8f%e4%ba%a4%e6%b5%81%e4%bc%ba%e6%9c%8d%e9%a9%85%e5%8b%95%e5%99%a8%e4%bd%8d%e7%bd%ae%e6%8e%a7%e5%88%b6%e8%bf%b4%e8%b7%af%e7%9a%84%e7%ad%89%e6%95%88%e6%96%b9%e5%a1%8a%e5%9c%96">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100031.png" alt="" /></p>
-<h3 id="modeling-of-the-servo-motor-with-connected-load-mechanical-nonlinear-dynamics">
+<h2 id="modeling-of-the-servo-motor-with-connected-load-mechanical-nonlinear-dynamics">
   Modeling of the Servo Motor with Connected Load Mechanical Nonlinear Dynamics
   <a class="anchor" href="#modeling-of-the-servo-motor-with-connected-load-mechanical-nonlinear-dynamics">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100032.png" alt="" /></p>
 <ul>
 <li>The load dynamics will couple to the motor as external disturbances</li>
@@ -417,10 +422,10 @@ The control unit provides man-machine interface</p>
 <li>Control algorithms and parameters are critical for specific applications</li>
 </ul>
 <p><img src="/img/2021032401/202103240100033.png" alt="" /></p>
-<h3 id="control-strategies-for-pmsm-ac-drives">
+<h2 id="control-strategies-for-pmsm-ac-drives">
   Control Strategies for PMSM AC Drives
   <a class="anchor" href="#control-strategies-for-pmsm-ac-drives">#</a>
-</h3>
+</h2>
 <p><img src="/img/2021032401/202103240100034.png" alt="" /></p>
 </p>
 </article>
@@ -459,44 +464,41 @@ The control unit provides man-machine interface</p>
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#數位交流驅動控制器之設計與實現">數位交流驅動控制器之設計與實現</a></li>
-    <li><a href="#introduction">Introduction</a>
-      <ul>
-        <li><a href="#composition-of-a-motion-control-system">Composition of a Motion Control System</a></li>
-        <li><a href="#modern-digital-ac-servo-drive">Modern Digital AC Servo Drive</a></li>
-        <li><a href="#typical-time-and-frequency-responses">Typical Time and Frequency Responses</a></li>
-        <li><a href="#selection-of-servo-drive-interface">Selection of Servo Drive Interface</a></li>
-        <li><a href="#evolution-of-electrical-machines">Evolution of Electrical Machines</a></li>
-        <li><a href="#what-could-an-ac-vector-system-do-in-servo-applications">What could an AC vector system do in servo applications?</a></li>
-        <li><a href="#induction-motor-vs-pm-synchronous-motor">Induction Motor vs. PM Synchronous Motor</a></li>
-        <li><a href="#ac-servo-driver-with-synchronous-or-induction-motors">AC Servo Driver with Synchronous or Induction Motors</a></li>
-        <li><a href="#vf-vector-induction-drive-vs-pm-ac-servo">VF Vector Induction Drive vs. PM AC Servo</a></li>
-        <li><a href="#永磁交流伺服馬達的結構">永磁交流伺服馬達的結構</a></li>
-        <li><a href="#optimal-capacity-ranges-of-brushless-servomotors">Optimal Capacity Ranges of Brushless Servomotors</a></li>
-        <li><a href="#characteristics-of-ac-servo-motors">Characteristics of AC Servo Motors</a></li>
-        <li><a href="#characteristics-of-ac-servo-drives">Characteristics of AC Servo Drives</a></li>
-        <li><a href="#永磁交流伺服馬達的規格">永磁交流伺服馬達的規格</a></li>
-        <li><a href="#永磁交流伺服驅動器的規格">永磁交流伺服驅動器的規格</a></li>
-        <li><a href="#state-of-the-art-ac-servos">State of the Art: AC Servos</a></li>
-        <li><a href="#non-salient-pole-for-ac-servo-motor">Non-Salient Pole for AC Servo Motor</a></li>
-        <li><a href="#architecture-of-motor-drive">Architecture of Motor Drive</a></li>
-        <li><a href="#伺服馬達驅動系統的控制架構">伺服馬達驅動系統的控制架構</a></li>
-        <li><a href="#直流伺服馬達驅動器的系統方塊圖">直流伺服馬達驅動器的系統方塊圖</a></li>
-        <li><a href="#交流伺服馬達驅動器的系統方塊圖">交流伺服馬達驅動器的系統方塊圖</a></li>
-        <li><a href="#永磁式交流伺服馬達的電子換相控制">永磁式交流伺服馬達的電子換相控制</a></li>
-        <li><a href="#永磁式交流伺服馬達驅動器之系統方塊圖">永磁式交流伺服馬達驅動器之系統方塊圖</a></li>
-        <li><a href="#typical-motion-control-system-block-diagram">Typical Motion Control System Block Diagram</a></li>
-        <li><a href="#hierarchical-control-architecture-for-ac-drives">Hierarchical Control Architecture for AC Drives</a></li>
-        <li><a href="#ac-servo-drive-vector-control">AC Servo Drive Vector Control</a></li>
-        <li><a href="#dq-model-of-ac-induction-machine-in-synchronous-rotating-reference-frame">dq-model of AC Induction Machine in synchronous rotating reference frame</a></li>
-        <li><a href="#永磁式交流伺服驅動器理想解耦電流控制迴路的等效方塊圖">永磁式交流伺服驅動器理想解耦電流控制迴路的等效方塊圖</a></li>
-        <li><a href="#永磁式交流伺服驅動器速度控制迴路的等效方塊圖">永磁式交流伺服驅動器速度控制迴路的等效方塊圖</a></li>
-        <li><a href="#decoupling-of-the-current-control-loop">Decoupling of the Current Control Loop</a></li>
-        <li><a href="#永磁式交流伺服驅動器位置控制迴路的等效方塊圖">永磁式交流伺服驅動器位置控制迴路的等效方塊圖</a></li>
-        <li><a href="#modeling-of-the-servo-motor-with-connected-load-mechanical-nonlinear-dynamics">Modeling of the Servo Motor with Connected Load Mechanical Nonlinear Dynamics</a></li>
-        <li><a href="#control-strategies-for-pmsm-ac-drives">Control Strategies for PMSM AC Drives</a></li>
-      </ul>
-    </li>
+    <li><a href="#topics">Topics</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#composition-of-a-motion-control-system">Composition of a Motion Control System</a></li>
+    <li><a href="#modern-digital-ac-servo-drive">Modern Digital AC Servo Drive</a></li>
+    <li><a href="#typical-time-and-frequency-responses">Typical Time and Frequency Responses</a></li>
+    <li><a href="#selection-of-servo-drive-interface">Selection of Servo Drive Interface</a></li>
+    <li><a href="#evolution-of-electrical-machines">Evolution of Electrical Machines</a></li>
+    <li><a href="#what-could-an-ac-vector-system-do-in-servo-applications">What could an AC vector system do in servo applications?</a></li>
+    <li><a href="#induction-motor-vs-pm-synchronous-motor">Induction Motor vs. PM Synchronous Motor</a></li>
+    <li><a href="#ac-servo-driver-with-synchronous-or-induction-motors">AC Servo Driver with Synchronous or Induction Motors</a></li>
+    <li><a href="#vf-vector-induction-drive-vs-pm-ac-servo">VF Vector Induction Drive vs. PM AC Servo</a></li>
+    <li><a href="#永磁交流伺服馬達的結構">永磁交流伺服馬達的結構</a></li>
+    <li><a href="#optimal-capacity-ranges-of-brushless-servomotors">Optimal Capacity Ranges of Brushless Servomotors</a></li>
+    <li><a href="#characteristics-of-ac-servo-motors">Characteristics of AC Servo Motors</a></li>
+    <li><a href="#characteristics-of-ac-servo-drives">Characteristics of AC Servo Drives</a></li>
+    <li><a href="#永磁交流伺服馬達的規格">永磁交流伺服馬達的規格</a></li>
+    <li><a href="#永磁交流伺服驅動器的規格">永磁交流伺服驅動器的規格</a></li>
+    <li><a href="#state-of-the-art-ac-servos">State of the Art: AC Servos</a></li>
+    <li><a href="#non-salient-pole-for-ac-servo-motor">Non-Salient Pole for AC Servo Motor</a></li>
+    <li><a href="#architecture-of-motor-drive">Architecture of Motor Drive</a></li>
+    <li><a href="#伺服馬達驅動系統的控制架構">伺服馬達驅動系統的控制架構</a></li>
+    <li><a href="#直流伺服馬達驅動器的系統方塊圖">直流伺服馬達驅動器的系統方塊圖</a></li>
+    <li><a href="#交流伺服馬達驅動器的系統方塊圖">交流伺服馬達驅動器的系統方塊圖</a></li>
+    <li><a href="#永磁式交流伺服馬達的電子換相控制">永磁式交流伺服馬達的電子換相控制</a></li>
+    <li><a href="#永磁式交流伺服馬達驅動器之系統方塊圖">永磁式交流伺服馬達驅動器之系統方塊圖</a></li>
+    <li><a href="#typical-motion-control-system-block-diagram">Typical Motion Control System Block Diagram</a></li>
+    <li><a href="#hierarchical-control-architecture-for-ac-drives">Hierarchical Control Architecture for AC Drives</a></li>
+    <li><a href="#ac-servo-drive-vector-control">AC Servo Drive Vector Control</a></li>
+    <li><a href="#dq-model-of-ac-induction-machine-in-synchronous-rotating-reference-frame">dq-model of AC Induction Machine in synchronous rotating reference frame</a></li>
+    <li><a href="#永磁式交流伺服驅動器理想解耦電流控制迴路的等效方塊圖">永磁式交流伺服驅動器理想解耦電流控制迴路的等效方塊圖</a></li>
+    <li><a href="#永磁式交流伺服驅動器速度控制迴路的等效方塊圖">永磁式交流伺服驅動器速度控制迴路的等效方塊圖</a></li>
+    <li><a href="#decoupling-of-the-current-control-loop">Decoupling of the Current Control Loop</a></li>
+    <li><a href="#永磁式交流伺服驅動器位置控制迴路的等效方塊圖">永磁式交流伺服驅動器位置控制迴路的等效方塊圖</a></li>
+    <li><a href="#modeling-of-the-servo-motor-with-connected-load-mechanical-nonlinear-dynamics">Modeling of the Servo Motor with Connected Load Mechanical Nonlinear Dynamics</a></li>
+    <li><a href="#control-strategies-for-pmsm-ac-drives">Control Strategies for PMSM AC Drives</a></li>
   </ul>
 </nav>
 
